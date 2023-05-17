@@ -1,0 +1,61 @@
+git --version //lets you check the version of git
+git config --global user.name "Shamanth"
+git config --global user.email "shamanth2@gmail.com"//allows you to cofigure git 
+mkdir myproject // makes a new directory.
+cd myproject // changes the current working directory.
+
+
+git init //initialize Git on the folder
+git status //check the Git status 
+
+git add <file_name> //add file to the Staging Environment
+git add . //add all the files to the Staging Environment
+
+
+git commit -m "your message" //commit the changes
+git commit -a -m "your message" //stage and commit together
+
+
+git log // view the history of commits for a repository
+ 
+
+git help --all // See all possible commands
+git command -help  //See all the available options for the specific command
+
+
+git branch new_feature //create a new branch
+git branch // check the available branches
+git checkout <branch_name> //change the working branch to another branch
+git -b checkout <branch_name> //create a new branch and checkout to it
+git branch -d <branch_name> //delete a branch
+
+git merge <branch_name> // merge the branch <branch_name> with current working branch
+git rebase <branch_name> // rebase the branch <branch_name> with current working branch
+
+git remote add origin URL //Add a remote repository as an origin
+git fetch origin //fetch gets all the change history of a tracked branch/repository
+git diff origin/<branch_name> //shows the differences between our local branch and origin/branch
+
+
+git merge origin/<branch_name> //merge combines the current branch, with a specified branch.
+git pull origin //pull to update our local Git
+git push origin //push to the remote repository
+
+git branch -a //see all local and remote branches
+git branch -r // see only the remote branches
+git push origin <branch>// push the current branch to github
+
+git clone <URL> //clone a remote git repository
+git remote -v //see how the remotes of the Git is set up
+git remote rename origin upstream //rename a remote
+
+
+git log --oneline //get all the logs 
+
+git revert HEAD --no-edit //revert back to  the previous commmit
+
+git reset <hash_number>// reset back to a commit 
+
+git commit --amend -m "your message"// amend your message
+
+
